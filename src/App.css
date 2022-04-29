@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --source-color: #152438;
+  --white-color: #f5f5f5;
+}
+
+body {
+  background-color: var(--source-color);
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-color: var(--white-color);
+  border-radius: 5px;
+  width: 80vw;
+  height: 80vh;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.dice-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.die-face {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.die-face:hover {
+  transform: scale(110%);
+}
+
+.die-face:active {
+  box-shadow: none;
+}
+
+.die-number {
+  font-size: 1.8rem;
+  color: var(--source-color);
+}
+
+.roll-dice {
+  background-color: #7400ff;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.3);
+}
+
+.roll-dice:hover {
+  transform: scale(120%);
+  transition: 0.1s ease-in-out;
+}
