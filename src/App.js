@@ -40,7 +40,7 @@ function App() {
 
   function generateNewDie() {
     return {
-      value: Math.floor(Math.random() * 2) + 1,
+      value: Math.floor(Math.random() * 6) + 1,
       isHeld: false,
       id: nanoid(),
     };
